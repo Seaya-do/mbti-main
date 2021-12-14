@@ -1,0 +1,181 @@
+/* 360 x 640  base */
+
+/* Reset CSS */
+:root {
+    --light: #fff;
+    --dark: #121212;
+    --forelight: #eee;
+    --foredark: #222;
+    --icon: #c4c4c4;
+    --shadow: #222;
+    --toggle: invert(0%);
+    --foreground: var(--foredark);
+    --background: var(--light);
+    --startcolor: var(--forelight);
+    --togglebtn: var(--toggle);
+    --boxshadow: var(--shadow);
+    --status: var(--light);
+}
+
+.darkmode {
+    --light: #fff;
+    --dark: #121212;
+    --forelight: #eee;
+    --foredark: #222;
+    --icon: #121212;
+    --shadow: #808080;
+    --toggle: invert(95%);
+    --foreground: var(--forelight);
+    --background: var(--dark);
+    --startcolor: var(--foredark);
+    --togglebtn: var(--toggle);
+    --boxshadow: var(--shadow);
+    --status: var(--forelight);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1em;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+a {
+    color: #888;
+    text-decoration: none;
+}
+
+/* wrapper */
+.wrapper {
+    height: 100%;
+	position: relative;
+	max-width: 100%;
+	min-width: 340px;
+}
+
+/* Header */
+.header {
+    padding-top: 10px;
+}
+
+.upper {
+    width: 340px;
+    height: 25px;
+    margin: 0 auto;
+    border: solid 1px var(--foreground);
+    background-color: #fff;
+    background-color: var(--status);
+}
+
+.status {
+    height: 100%;
+}
+
+/* Section */
+.qs {
+    width: 340px;
+    height: 72px;
+    margin: 0 auto; /* 중앙 정렬 */
+    margin-top: 117px;
+    text-align: center;
+    font-family: 'Nanum Gothic';
+    font-weight: normal;
+    font-size: 1.125em;
+    line-height: 200%;
+}
+
+.answer {
+    margin-top: 117px;
+    margin-bottom: 117px;
+}
+
+.btny {
+    text-align: center;
+}
+
+.yes {
+    height: 61px;
+    width: 305px;
+    border: none;
+    border-radius: 30.5px;
+    font-family: 'Nanum Gothic';
+    font-size: 1.500em;
+    font-weight: bold;
+    border: solid 2px var(--boxshadow);
+    background-color: #fff;
+    box-shadow: 2px 4px var(--boxshadow);
+    cursor: pointer;
+}
+
+.yes:hover {
+    opacity: 0.7;
+    transform: translateY(-3px);
+}
+
+.btnn{
+    margin-top: 24px;
+    text-align: center;
+}
+
+.no {
+    height: 61px;
+    width: 305px;
+    border: none;
+    border-radius: 30.5px;
+    font-family: 'Nanum Gothic';
+    font-size: 1.500em;
+    font-weight: bold;
+    background-color: #fff;
+    border: solid 2px var(--boxshadow);
+    box-shadow: 2px 4px var(--boxshadow);
+    cursor: pointer;
+}
+
+.no:hover {
+    opacity: 0.7;
+    transform: translateY(-3px);
+}
+
+footer {
+    text-align: center;
+    font-size: 0.750em;
+    font-family: 'Roboto';
+}
+
+/* Desktop */
+@media only screen and (min-width: 700px) {
+    .qs {
+        margin-top: 19%;
+    }
+
+    .answer {
+        margin-bottom: 22%;
+    }
+}
+
+@media only screen and (min-width: 1294px) {
+    .qs {
+        margin-top: 13.3%;
+    }
+
+    .answer {
+        margin-bottom: 15.3%;
+    }
+}
+.re {
+    width: 300px;
+    height: 60px;
+    /* 중앙 정렬 */
+    margin: 90px auto 0;
+    text-align: center;
+    font-family: 'Nanum Gothic';
+    font-weight: normal;
+    font-size: 1.120em;
+    line-height: 200%;
+}
+
+
+

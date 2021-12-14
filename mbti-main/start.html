@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/start.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="js/darkmode.js"></script>
+    <title>MBTI TEST</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <div class="upper">
+                <img src="images/night_day.svg" alt="dark mode" class="dark">
+            </div>
+        </header>
+        <section>
+            <h1>MBTI TEST</h1>
+            <article>
+                <div class="btn">
+                    <button class="start" type="button" onclick="start()">시작하기</button>
+                </div>
+                <div class="link">테스트 공유하기</div>
+                <div class="round">
+                    <a href="#" onclick="twt()" target="_blank" class="fa twt"><img class="twitter"
+                            src="images/twitter.svg" alt="twitter"></a>
+                    <a href="#" onclick="kaTalk()" class="fa kakao"><img src="images/kakao-talk.svg" alt="kakaotalk"
+                            class="talk"></a>
+                    <a href="#" onclick="fb()" class="fa fbook"><img src="images/facebook-circular-logo.svg"
+                            alt="facebook" class="facebook"></a>
+                    <a href="#" class="fa share"><img src="images/link.svg" alt="link share" class="links"></a>
+                </div>
+            </article>
+        </section>
+        <footer>
+            ⓒ2021. <a href="https://github.com/arden-k">arden-k</a> & <a href="https://github.com/Seaya-do">Seaya-do</a>
+        </footer>
+    </div>
+    <script src="js/start.js"></script>
+</body>
+
+</html>
