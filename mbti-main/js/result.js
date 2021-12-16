@@ -2,12 +2,17 @@ const result = document.querySelector("#result");
 const qs = document.querySelector("#qs");
 
 const rIndex = 0; //qIndexd에서 받은 질문을 넣을 변수
-const endPoint = 80;
-const endSelect = [];
 
 
 
-function calResult(list, types){
+
+
+
+let one = qnaList[qIndex].a[0].type[0];
+let two = qnaList[qIndex].a[1].type[0];
+console.log(one,two);  //qnaList에서 qIndex I,E를 가져옴 비교를 해야함
+
+function calResult(one, two){
     for (var i = 0, len = list.length; i < len; i++) {
         if (list[i].types == types) return list[i];
 
